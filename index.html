@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BB Glam Unisex Salon | Premium Hair & Beauty in Vizag</title>
-    <meta name="description" content="BB Glam Unisex Salon in Sujatha Nagar, Vizag. Premium hair and beauty services including styling, treatments, and grooming. High customer satisfaction and affordable pricing.">
+    <meta name="description" content="BB Glam Unisex Salon in Chinnamushidiwada, Vizag. Premium hair and beauty services including styling, treatments, and grooming at Eswar Plaza.">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +13,14 @@
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="loading">
+    
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-dot"></div>
+
+    <!-- Decorative Background Glow -->
+    <div class="bg-glow"></div>
 
     <!-- Header / Navbar -->
     <header class="header">
@@ -47,26 +54,32 @@
     </div>
 
     <!-- Hero Section -->
-    <section id="hero" class="hero">
+    <section id="hero" class="hero" style="background-image: url('luxury_salon_hero_1775530001078.png');">
         <div class="hero-overlay"></div>
         <div class="container hero-content" data-reveal="fade-up">
-            <h1 class="hero-title">BB Glam Unisex Salon</h1>
-            <p class="hero-tagline">Premium Hair & Beauty Services in Vizag</p>
-            <p class="hero-subtext">Professional staff, affordable pricing, and top-quality treatments</p>
-            <a href="https://wa.me/919182984972" target="_blank" class="btn btn-primary btn-lg">
-                <i data-lucide="message-circle"></i> Book on WhatsApp
-            </a>
+            <p class="hero-tagline">Excellence in Grooming</p>
+            <h1 class="hero-title">Experience <br><span class="gold-text">True Luxury</span></h1>
+            <p class="hero-subtext">Vizag's most exclusive unisex salon. Where art meets grooming in an atmosphere of pure elegance.</p>
+            <div class="hero-btns">
+                <a href="https://wa.me/919182984972" target="_blank" class="btn btn-primary btn-lg">
+                    <i data-lucide="message-circle"></i> Reserve Appointment
+                </a>
+            </div>
         </div>
     </section>
+
 
     <!-- About Section -->
     <section id="about" class="about section">
         <div class="container">
-            <div class="section-badge" data-reveal="fade-up">About Us</div>
-            <h2 class="section-title" data-reveal="fade-up">Elevating Your Natural Beauty</h2>
+            <div class="section-badge" data-reveal="fade-up">Our Heritage</div>
+            <h2 class="section-title" data-reveal="fade-up">
+                <span>The Art of Perfection</span>
+                Elevating Your Natural Beauty
+            </h2>
             <div class="about-grid">
                 <div class="about-text" data-reveal="fade-right">
-                    <p>BB Glam Unisex Salon in Sujatha Nagar is one of the top-rated salons in Vizag, known for professional service, affordable pricing, and customer satisfaction. Our experienced staff ensures you get the best look and care.</p>
+                    <p>BB Glam Unisex Salon at Eswar Plaza, Chinnamushidiwada is one of the top-rated salons in Vizag, known for professional service, affordable pricing, and customer satisfaction. Our experienced staff ensures you get the best look and care.</p>
                     <div class="about-stats">
                         <div class="stat-item">
                             <div class="stat-value">4.7 <span class="star">⭐</span></div>
@@ -83,7 +96,7 @@
                     </div>
                 </div>
                 <div class="about-image-container" data-reveal="fade-left">
-                    <img src="interior.png" alt="Salon Interior" class="about-img">
+                    <img src="luxury_salon_interior_2_1775530022038.png" alt="Salon Interior" class="about-img">
                 </div>
             </div>
         </div>
@@ -170,9 +183,15 @@
             <div class="section-badge" data-reveal="fade-up">Gallery</div>
             <h2 class="section-title" data-reveal="fade-up">Glimpses of Glamour</h2>
             <div class="gallery-grid">
-                <div class="gallery-item" data-reveal="fade-up"><img src="hero.png" alt="Salon Gallery 1"></div>
-                <div class="gallery-item" data-reveal="fade-up" data-reveal-delay="100"><img src="interior.png" alt="Salon Gallery 2"></div>
-                <div class="gallery-item" data-reveal="fade-up" data-reveal-delay="200"><img src="facial.png" alt="Salon Gallery 3"></div>
+                <div class="gallery-item" data-reveal="fade-up">
+                    <img src="luxury_salon_hero_1775530001078.png" alt="Salon Gallery 1">
+                </div>
+                <div class="gallery-item" data-reveal="fade-up" data-reveal-delay="100">
+                    <img src="luxury_salon_interior_2_1775530022038.png" alt="Salon Gallery 2">
+                </div>
+                <div class="gallery-item" data-reveal="fade-up" data-reveal-delay="200">
+                    <img src="luxury_facial_treatment_1775530042906.png" alt="Salon Gallery 3">
+                </div>
             </div>
         </div>
     </section>
@@ -211,14 +230,17 @@
                             <i data-lucide="phone"></i>
                             <div>
                                 <p class="info-label">Call Us</p>
-                                <a href="tel:09182984972" class="info-value">091829 84972</a>
+                                <div class="info-value">
+                                    <a href="tel:+919182984972">+91 91829 84972</a><br>
+                                    <a href="tel:+919989958331">+91 99899 58331</a>
+                                </div>
                             </div>
                         </div>
                         <div class="info-item">
                             <i data-lucide="map-pin"></i>
                             <div>
                                 <p class="info-label">Address</p>
-                                <p class="info-value">Araku - Visakhapatnam Rd, Sujatha Nagar, Vizag</p>
+                                <p class="info-value">Chanikya Nagar, Eswar Plaza, Chinnamushidiwada, Vizag - 530051</p>
                             </div>
                         </div>
                     </div>
