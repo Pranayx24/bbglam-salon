@@ -154,3 +154,102 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+// Modal Logic
+const modalOverlay = document.getElementById('book-modal');
+const openModalBtns = document.querySelectorAll('.open-modal');
+const closeModalBtn = document.querySelector('.modal-close');
+const bookingForm = document.getElementById('booking-form');
+
+const toggleModal = (show) => {
+    if (modalOverlay) {
+        modalOverlay.style.opacity = show ? '1' : '0';
+        modalOverlay.style.visibility = show ? 'visible' : 'hidden';
+        document.body.style.overflow = show ? 'hidden' : '';
+    }
+};
+
+openModalBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        toggleModal(true);
+    });
+});
+
+if (closeModalBtn) {
+    closeModalBtn.addEventListener('click', () => toggleModal(false));
+}
+
+if (modalOverlay) {
+    modalOverlay.addEventListener('click', (e) => {
+        if (e.target === modalOverlay) toggleModal(false);
+    });
+}
+
+if (bookingForm) {
+    bookingForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.getElementById('b-name').value;
+        const service = document.getElementById('b-service').value;
+        const date = document.getElementById('b-date').value;
+        let time = document.getElementById('b-time').value;
+        
+        let [hours, minutes] = time.split(':');
+        let ampm = hours >= 12 ? 'PM' : 'AM';
+        hours = hours % 12 || 12;
+        let timeFormatted = `${hours}:${minutes} ${ampm}`;
+
+        const message = `Hello BB Glam! I would like to book an appointment.\n\n*Name:* ${name}\n*Service:* ${service}\n*Date:* ${date}\n*Time:* ${timeFormatted}\n\nPlease confirm my slot!`;
+        const whatsappUrl = `https://wa.me/919182984972?text=${encodeURIComponent(message)}`;
+        
+        window.open(whatsappUrl, '_blank');
+        toggleModal(false);
+        bookingForm.reset();
+    });
+}
+
+// Services Tabs Logic
+const tabBtns = document.querySelectorAll('.tab-btn');
+const tabPanes = document.querySelectorAll('.tab-pane');
+
+tabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        const targetTab = btn.getAttribute('data-tab');
+        
+        tabBtns.forEach(b => {
+            b.style.background = 'transparent';
+            b.style.color = 'var(--gold)';
+        });
+        
+        btn.style.background = 'var(--gold-gradient)';
+        btn.style.color = '#000';
+        
+        tabPanes.forEach(pane => {
+            pane.style.display = 'none';
+        });
+        
+        const activePane = document.getElementById(targetTab);
+        if (activePane) {
+            activePane.style.display = 'block';
+        }
+    });
+});
+
+// FAQ Accordion Logic
+const faqQuestions = document.querySelectorAll('.faq-question');
+
+faqQuestions.forEach(question => {
+    question.addEventListener('click', () => {
+        const answer = question.nextElementSibling;
+        const icon = question.querySelector('i');
+        
+        const isOpen = answer.style.display === 'block';
+        
+        answer.style.display = isOpen ? 'none' : 'block';
+        
+        if (icon) {
+            icon.style.transform = isOpen ? 'rotate(0deg)' : 'rotate(180deg)';
+            icon.style.transition = 'transform 0.3s ease';
+        }
+    });
+});

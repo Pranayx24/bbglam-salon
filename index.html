@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BB Glam Unisex Salon | Premium Hair & Beauty in Vizag</title>
-    <meta name="description" content="BB Glam Unisex Salon in Chinnamushidiwada, Vizag. Premium hair and beauty services including styling, treatments, and grooming at Eswar Plaza.">
+    <meta name="description"
+        content="BB Glam Unisex Salon in Chinnamushidiwada, Vizag. Premium hair and beauty services including styling, treatments, and grooming at Eswar Plaza.">
+    <!-- SEO & Social Meta Tags -->
+    <meta property="og:title" content="BB Glam Unisex Salon | Premium Hair & Beauty">
+    <meta property="og:description" content="Vizag's most exclusive unisex salon. Where art meets grooming in an atmosphere of pure elegance.">
+    <meta property="og:image" content="hero.png">
+    <meta property="og:type" content="website">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo.png">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="loading">
-    
+
     <!-- Custom Cursor -->
     <div class="custom-cursor"></div>
     <div class="custom-cursor-dot"></div>
@@ -34,7 +46,7 @@
                 <a href="#services">Services</a>
                 <a href="#pricing">Pricing</a>
                 <a href="#gallery">Gallery</a>
-                <a href="#contact" class="btn btn-outline">Book Now</a>
+                <a href="#" class="btn btn-outline open-modal" data-target="book-modal">Book Now</a>
             </nav>
             <div class="mobile-menu-btn">
                 <i data-lucide="menu"></i>
@@ -50,7 +62,7 @@
             <a href="#services">Services</a>
             <a href="#pricing">Pricing</a>
             <a href="#gallery">Gallery</a>
-            <a href="#contact" class="btn btn-primary">Book Now</a>
+            <a href="#" class="btn btn-primary open-modal" data-target="book-modal">Book Now</a>
         </div>
     </div>
 
@@ -60,10 +72,11 @@
         <div class="container hero-content" data-reveal="fade-up">
             <p class="hero-tagline">Excellence in Grooming</p>
             <h1 class="hero-title">Experience <br><span class="gold-text">True Luxury</span></h1>
-            <p class="hero-subtext">Vizag's most exclusive unisex salon. Where art meets grooming in an atmosphere of pure elegance.</p>
+            <p class="hero-subtext">Vizag's most exclusive unisex salon. Where art meets grooming in an atmosphere of
+                pure elegance.</p>
             <div class="hero-btns">
-                <a href="https://wa.me/919182984972" target="_blank" class="btn btn-primary btn-lg">
-                    <i data-lucide="message-circle"></i> Reserve Appointment
+                <a href="#" class="btn btn-primary btn-lg open-modal" data-target="book-modal">
+                    <i data-lucide="calendar"></i> Reserve Appointment
                 </a>
             </div>
         </div>
@@ -80,7 +93,9 @@
             </h2>
             <div class="about-grid">
                 <div class="about-text" data-reveal="fade-right">
-                    <p>BB Glam Unisex Salon at Eswar Plaza, Chinnamushidiwada is one of the top-rated salons in Vizag, known for professional service, affordable pricing, and customer satisfaction. Our experienced staff ensures you get the best look and care.</p>
+                    <p>BB Glam Unisex Salon at Eswar Plaza, Chinnamushidiwada is one of the top-rated salons in Vizag,
+                        known for professional service, affordable pricing, and customer satisfaction. Our experienced
+                        staff ensures you get the best look and care.</p>
                     <div class="about-stats">
                         <div class="stat-item">
                             <div class="stat-value">4.7 <span class="star">⭐</span></div>
@@ -108,40 +123,59 @@
         <div class="container">
             <div class="section-badge" data-reveal="fade-up">Our Expertise</div>
             <h2 class="section-title" data-reveal="fade-up">Premium Salon Services</h2>
-            
-            <div class="services-grid">
-                <!-- Hair Services -->
-                <div class="service-card" data-reveal="fade-up">
-                    <div class="service-icon"><i data-lucide="scissors"></i></div>
-                    <h3>Hair Services</h3>
-                    <ul>
-                        <li>Haircut & Styling</li>
-                        <li>Hair Coloring</li>
-                        <li>Hair Spa</li>
-                    </ul>
+
+            <div class="tabs-container" data-reveal="fade-up">
+                <div class="tabs-nav" style="display: flex; gap: 1rem; margin-bottom: 2rem; justify-content: center; flex-wrap: wrap;">
+                    <button class="tab-btn active" data-tab="tab-hair" style="background: var(--gold-gradient); color: #000; border: none; padding: 0.8rem 2rem; font-weight: 600; cursor: pointer; border-radius: 2px;">Hair Care</button>
+                    <button class="tab-btn" data-tab="tab-treatments" style="background: transparent; color: var(--gold); border: 1px solid var(--gold); padding: 0.8rem 2rem; font-weight: 600; cursor: pointer; border-radius: 2px;">Treatments</button>
+                    <button class="tab-btn" data-tab="tab-beauty" style="background: transparent; color: var(--gold); border: 1px solid var(--gold); padding: 0.8rem 2rem; font-weight: 600; cursor: pointer; border-radius: 2px;">Beauty & Skin</button>
                 </div>
                 
-                <!-- Treatments -->
-                <div class="service-card" data-reveal="fade-up" data-reveal-delay="100">
-                    <div class="service-icon"><i data-lucide="sparkles"></i></div>
-                    <h3>Treatments</h3>
-                    <ul>
-                        <li>Dandruff Treatment</li>
-                        <li>Hair Fall Treatment</li>
-                        <li>Protein Treatment</li>
-                        <li>Smoothening / Advanced</li>
-                    </ul>
-                </div>
-                
-                <!-- Beauty Services -->
-                <div class="service-card" data-reveal="fade-up" data-reveal-delay="200">
-                    <div class="service-icon"><i data-lucide="palette"></i></div>
-                    <h3>Beauty & Grooming</h3>
-                    <ul>
-                        <li>Premium Facial</li>
-                        <li>Advanced Skin Care</li>
-                        <li>Men & Women Grooming</li>
-                    </ul>
+                <div class="tabs-content">
+                    <!-- Hair Services -->
+                    <div class="tab-pane active" id="tab-hair">
+                        <div class="service-card" style="box-shadow: none; border-color: var(--gold); min-height: 350px;">
+                            <div class="service-icon"><i data-lucide="scissors"></i></div>
+                            <h3>Hair Services</h3>
+                            <p style="color: var(--text-gray); margin-bottom: 2rem; font-size: 1.1rem;">Precision cuts, modern styles, and vibrant colors tailored to your unique personality.</p>
+                            <ul style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                                <li>Custom Haircut & Styling</li>
+                                <li>Global Hair Coloring</li>
+                                <li>Highlights & Balayage</li>
+                                <li>Relaxing Hair Spa</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Treatments -->
+                    <div class="tab-pane" id="tab-treatments" style="display: none;">
+                        <div class="service-card" style="box-shadow: none; border-color: var(--gold); min-height: 350px;">
+                            <div class="service-icon"><i data-lucide="sparkles"></i></div>
+                            <h3>Advanced Treatments</h3>
+                            <p style="color: var(--text-gray); margin-bottom: 2rem; font-size: 1.1rem;">Professional solutions to restore hair health, fight dandruff, and reverse damage.</p>
+                            <ul style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                                <li>Scalp Genesis Dandruff Treatment</li>
+                                <li>Aminexyl Hair Fall Defense</li>
+                                <li>Protein & Keratin Treatment</li>
+                                <li>Ola Plex / Wella Plex Advance</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Beauty Services -->
+                    <div class="tab-pane" id="tab-beauty" style="display: none;">
+                        <div class="service-card" style="box-shadow: none; border-color: var(--gold); min-height: 350px;">
+                            <div class="service-icon"><i data-lucide="palette"></i></div>
+                            <h3>Beauty & Grooming</h3>
+                            <p style="color: var(--text-gray); margin-bottom: 2rem; font-size: 1.1rem;">Rejuvenate your skin and perfect your look with our comprehensive beauty services.</p>
+                            <ul style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                                <li>Premium Facials & Cleanups</li>
+                                <li>Advanced Skin Care</li>
+                                <li>Bridal & Party Makeup</li>
+                                <li>Men & Women Complete Grooming</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -152,17 +186,22 @@
         <div class="container pricing-box" data-reveal="fade-up">
             <div class="section-badge">Service Menu</div>
             <h2 class="section-title">Treatments & Pricing</h2>
-            
+
             <div class="pricing-category" style="margin-bottom: 3rem;">
-                <h3 style="color: var(--gold); margin-bottom: 1.5rem; display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; font-size: 1.3rem; text-transform: uppercase; letter-spacing: 1px;">
+                <h3
+                    style="color: var(--gold); margin-bottom: 1.5rem; display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; font-size: 1.3rem; text-transform: uppercase; letter-spacing: 1px;">
                     Dandruff & Hair Treatment
-                    <span style="font-size: 0.85rem; color: var(--gold-light); font-family: 'Inter', sans-serif; text-transform: none; letter-spacing: 0;">(Membership card: 30%)</span>
+                    <span
+                        style="font-size: 0.85rem; color: var(--gold-light); font-family: 'Inter', sans-serif; text-transform: none; letter-spacing: 0;">(Membership
+                        card: 30%)</span>
                 </h3>
                 <div class="pricing-list" style="margin-top: 0; margin-bottom: 0;">
                     <div class="pricing-item"><span>Bio Therapy Treatment</span><span class="price">1200</span></div>
-                    <div class="pricing-item"><span>Scalp Genesis for Dandruff</span><span class="price">1000</span></div>
+                    <div class="pricing-item"><span>Scalp Genesis for Dandruff</span><span class="price">1000</span>
+                    </div>
                     <div class="pricing-item"><span>Aminexyl for Hair Fall</span><span class="price">1200</span></div>
-                    <div class="pricing-item"><span>Scalp Genesis for Hair Fall</span><span class="price">1800</span></div>
+                    <div class="pricing-item"><span>Scalp Genesis for Hair Fall</span><span class="price">1800</span>
+                    </div>
                     <div class="pricing-item"><span>Pro Longer Treatment</span><span class="price">2000</span></div>
                     <div class="pricing-item"><span>Metal Dx Treatment</span><span class="price">1800</span></div>
                     <div class="pricing-item"><span>Wella Plex Treatment</span><span class="price">1200</span></div>
@@ -171,9 +210,12 @@
             </div>
 
             <div class="pricing-category" style="margin-bottom: 3rem;">
-                <h3 style="color: var(--gold); margin-bottom: 1.5rem; display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; font-size: 1.3rem; text-transform: uppercase; letter-spacing: 1px;">
+                <h3
+                    style="color: var(--gold); margin-bottom: 1.5rem; display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; font-size: 1.3rem; text-transform: uppercase; letter-spacing: 1px;">
                     Treatment for Damaged Hair
-                    <span style="font-size: 0.85rem; color: var(--gold-light); font-family: 'Inter', sans-serif; text-transform: none; letter-spacing: 0;">(Membership card: 50%)</span>
+                    <span
+                        style="font-size: 0.85rem; color: var(--gold-light); font-family: 'Inter', sans-serif; text-transform: none; letter-spacing: 0;">(Membership
+                        card: 50%)</span>
                 </h3>
                 <div class="pricing-list" style="margin-top: 0; margin-bottom: 0;">
                     <div class="pricing-item"><span>Ola Plex Advance</span><span class="price">2500</span></div>
@@ -182,9 +224,12 @@
             </div>
 
             <div class="pricing-category">
-                <h3 style="color: var(--gold); margin-bottom: 1.5rem; display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; font-size: 1.3rem; text-transform: uppercase; letter-spacing: 1px;">
+                <h3
+                    style="color: var(--gold); margin-bottom: 1.5rem; display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; font-size: 1.3rem; text-transform: uppercase; letter-spacing: 1px;">
                     Other Treatments
-                    <span style="font-size: 0.85rem; color: var(--gold-light); font-family: 'Inter', sans-serif; text-transform: none; letter-spacing: 0;">(Membership card: 50%)</span>
+                    <span
+                        style="font-size: 0.85rem; color: var(--gold-light); font-family: 'Inter', sans-serif; text-transform: none; letter-spacing: 0;">(Membership
+                        card: 50%)</span>
                 </h3>
                 <div class="pricing-list" style="margin-top: 0; margin-bottom: 0;">
                     <div class="pricing-item"><span>Lice Treatment</span><span class="price">2000</span></div>
@@ -243,7 +288,7 @@
                     <div class="section-badge">Get in Touch</div>
                     <h2 class="section-title">Contact BB Glam</h2>
                     <p class="contact-desc">Ready for a transformation? Visit us or book your appointment today.</p>
-                    
+
                     <div class="info-items">
                         <div class="info-item">
                             <i data-lucide="phone"></i>
@@ -263,16 +308,42 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <a href="https://wa.me/919182984972" target="_blank" class="btn btn-primary btn-lg mt-4">
                         <i data-lucide="message-circle"></i> Chat on WhatsApp
                     </a>
                 </div>
-                
+
                 <div class="map-container" data-reveal="fade-left">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3800.089843657784!2d83.2104573!3d17.7753303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a39626573c7f999%3A0x6b107e36605963f4!2sBB%20GLAM%20UNISEX%20SALON!5e0!3m2!1sen!2sin!4v1712460000000!5m2!1sen!2sin" 
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3800.089843657784!2d83.2104573!3d17.7753303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a39626573c7f999%3A0x6b107e36605963f4!2sBB%20GLAM%20UNISEX%20SALON!5e0!3m2!1sen!2sin!4v1712460000000!5m2!1sen!2sin"
                         width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq section">
+        <div class="container" style="max-width: 800px;">
+            <div class="section-badge" data-reveal="fade-up">Got Questions?</div>
+            <h2 class="section-title" data-reveal="fade-up" style="text-align: center;">Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item" data-reveal="fade-up" style="border-bottom: 1px solid var(--border-color); margin-bottom: 1rem; padding-bottom: 1rem;">
+                    <button class="faq-question" style="width: 100%; text-align: left; background: none; border: none; color: var(--gold); font-size: 1.2rem; font-family: 'Outfit', sans-serif; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">Do I need to book an appointment in advance? <i data-lucide="chevron-down"></i></button>
+                    <div class="faq-answer" style="display: none; padding-top: 1rem; color: var(--text-gray);"><p>While walk-ins are welcome depending on availability, we highly recommend booking in advance to ensure you get your preferred time and stylist.</p></div>
+                </div>
+                <div class="faq-item" data-reveal="fade-up" data-reveal-delay="100" style="border-bottom: 1px solid var(--border-color); margin-bottom: 1rem; padding-bottom: 1rem;">
+                    <button class="faq-question" style="width: 100%; text-align: left; background: none; border: none; color: var(--gold); font-size: 1.2rem; font-family: 'Outfit', sans-serif; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">What professional products do you use? <i data-lucide="chevron-down"></i></button>
+                    <div class="faq-answer" style="display: none; padding-top: 1rem; color: var(--text-gray);"><p>We exclusively use premium, industry-leading products from brands like L'Oréal Professional to ensure the best care for your hair and skin.</p></div>
+                </div>
+                <div class="faq-item" data-reveal="fade-up" data-reveal-delay="200" style="border-bottom: 1px solid var(--border-color); margin-bottom: 1rem; padding-bottom: 1rem;">
+                    <button class="faq-question" style="width: 100%; text-align: left; background: none; border: none; color: var(--gold); font-size: 1.2rem; font-family: 'Outfit', sans-serif; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">Do you offer bridal makeup packages? <i data-lucide="chevron-down"></i></button>
+                    <div class="faq-answer" style="display: none; padding-top: 1rem; color: var(--text-gray);"><p>Yes! We offer comprehensive, customizable bridal packages. Please contact us directly or book a consultation via WhatsApp.</p></div>
+                </div>
+                <div class="faq-item" data-reveal="fade-up" data-reveal-delay="300" style="border-bottom: 1px solid var(--border-color); margin-bottom: 1rem; padding-bottom: 1rem;">
+                    <button class="faq-question" style="width: 100%; text-align: left; background: none; border: none; color: var(--gold); font-size: 1.2rem; font-family: 'Outfit', sans-serif; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">Is parking available at Eswar Plaza? <i data-lucide="chevron-down"></i></button>
+                    <div class="faq-answer" style="display: none; padding-top: 1rem; color: var(--text-gray);"><p>Yes, ample parking is available at Eswar Plaza for our customers' convenience.</p></div>
                 </div>
             </div>
         </div>
@@ -300,6 +371,48 @@
         <i data-lucide="message-circle"></i>
     </a>
 
+    <!-- Booking Modal -->
+    <div id="book-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close"><i data-lucide="x"></i></button>
+            <h3 style="color: var(--gold); font-size: 2rem; margin-bottom: 1rem; font-family: 'Outfit', sans-serif;">Book Appointment</h3>
+            <p style="color: var(--text-gray); margin-bottom: 2rem;">Fill out the details below and we'll confirm your slot via WhatsApp.</p>
+            <form id="booking-form" class="booking-form">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" id="b-name" required placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label>Service Interested In</label>
+                    <select id="b-service" required>
+                        <option value="" disabled selected>Select a service</option>
+                        <option value="Haircut & Styling">Haircut & Styling</option>
+                        <option value="Hair Coloring">Hair Coloring</option>
+                        <option value="Dandruff / Hair Fall Treatment">Dandruff / Hair Fall Treatment</option>
+                        <option value="Advanced Hair Treatment">Advanced Hair Treatment</option>
+                        <option value="Premium Facial">Premium Facial</option>
+                        <option value="Bridal / Grooming">Bridal / Grooming</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                    <div class="form-group">
+                        <label>Preferred Date</label>
+                        <input type="date" id="b-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Preferred Time</label>
+                        <input type="time" id="b-time" required>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">
+                    Continue to WhatsApp <i data-lucide="arrow-right"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
+
 </html>
